@@ -1,0 +1,3 @@
+JavaScript é uma linguagem de programação de alto nível e orientada a objetos utilizada para adicionar interatividade e funcionalidade dinâmica a páginas da web. É possível também manipular o conteúdo HTML, responder a eventos do usuário, criar animações, validar formulários, entre outros.
+
+<p class="conhecimento">Tenho 2 anos de expreiência com JavaScript.</p>

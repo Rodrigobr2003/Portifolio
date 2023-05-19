@@ -1,0 +1,3 @@
+Bootstrap é um framework front-end usado para desenvolver rapidamente sites e aplicativos web responsivos. Ele fornece uma biblioteca de componentes pré-estilizados e um sistema de grid flexível, facilitando o design e a implementação de interfaces modernas e compatíveis com dispositivos móveis.
+
+<p class="conhecimento">Tenho 2 anos de expreiência com Bootstrap.</p>

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho{
+    background-color: rgb(182, 174, 146);
+    position: fixed;
+    width: 98.5%;
+    margin: 10px;
+    display: flex;
+    flex: left;
+    padding: 10px 0;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.logo{
+    margin-left: 160px;
+    width: 60px;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 350px;
+    align-items: center;
+}
+
+.links li a{
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: 'Ubahn', sans-serif;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.links li a:hover{
+    color: rgb(100, 229, 102);
+}
+
+.links li{
+    margin-left: 55px;
+    border-bottom: 0;
+    transition: 0.1s ease-in-out;
+}
+
+.links li:hover {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+
+
+/*PARALLAX*/
+body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,h2{
+    font-weight: 900;
+    color: black;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background-color: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 70%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.module.parallax-1{
+    background-image: url("../images/card.png");
+}
+
+section.module.parallax-2 {
+    background-image: url("../images/parallax2.png");
+}
+
+section.module.parallax-3 {
+    background-image: url("../images/parallax3.png");
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+
+.projetos{
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projeto{
+    margin: 10px;
+    width: calc(50% - 12px);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgProjeto{
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    margin: 10px;
+    border-left: 10px solid rgb(100, 229, 102);
+    border-radius: 0 5px 5px 0;
+}
+
+.textosProjeto{
+    text-align: center;
+}
+
+.textosProjeto h2{
+    font-size: 1.8em;
+}
+
+.textosProjeto p{
+    padding: 5px 40px 5px 40px;
+}
+
+.visualizarProjeto{
+    height: 50px;
+    width: 200px;
+    border: 3px solid rgb(41, 73, 253);
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.visualizarProjeto:hover{
+    border:3px solid aqua;
+    color: rgb(0, 209, 209);
+}
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linguagem{
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linguagem.bg{
+    background-image: url('../images/HtmlEsc.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.linguagem.bg.html{
+    background-image: url('../images/HtmlEsc.png');
+}
+
+.linguagem.bg.html:hover{
+    background-image: url('../images/Html.png');
+}
+
+.linguagem.bg.css {
+    background-image: url('../images/CssEsc.png');
+}
+
+.linguagem.bg.css:hover {
+    background-image: url('../images/Css.png');
+}
+
+.linguagem.bg.javaScript {
+    background-image: url('../images/JavaScriptEsc.png');
+}
+
+.linguagem.bg.javaScript:hover {
+    background-image: url('../images/JavaScript.png');
+}
+
+.linguagem.bg.mySql {
+    background-image: url('../images/mySqlEsc.png');
+}
+
+.linguagem.bg.mySql:hover {
+    background-image: url('../images/mySql.png');
+}
+
+.linguagem.bg.bootstrap{
+    background-image: url('../images/bootstrapEsc.png');
+    background-size: 110px;
+}
+
+.linguagem.bg.bootstrap:hover {
+    background-image: url('../images/bootstrap.png');
+}
+
+.divTextoHabilidade{
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.visivel{
+    opacity: 1;
+}
+
+.descricaoLinguagem{
+    font-size: 1.5em;
+}
+
+.instrucao{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.conhecimento{
+    margin-top: 20px;
+}
