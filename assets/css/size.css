@@ -1,7 +1,5 @@
 @media (max-width: 576px){
 
-    
-
     .cabecalho {
         background-color: rgb(182, 174, 146);
         position: fixed;
@@ -112,4 +110,120 @@
         font-size: 35px;
     }
     
+}
+
+@media (max-width: 1112px) {
+
+    .cabecalho {
+        background-color: rgb(182, 174, 146);
+        position: fixed;
+        width: 95.5%;
+        margin: 10px;
+        display: flex;
+        flex: left;
+        padding: 10px 0;
+        border-radius: 20px;
+        z-index: 10;
+    }
+
+    .logo {
+        margin-left: 50px;
+        width: 50px;
+    }
+
+    .links {
+        list-style: none;
+        display: flex;
+        float: left;
+        margin: -30px;
+        position: relative;
+        left: 100px;
+        align-items: center;
+    }
+
+    .links li a {
+        text-decoration: none;
+        font-size: 1.4em;
+        font-family: 'Ubahn', sans-serif;
+        color: black;
+        transition: 0.5s ease;
+    }
+
+    section.module.parallax {
+        display: none;
+    }
+
+    .first-h2 {
+        padding-top: 40px;
+    }
+
+    .container {
+        width: 86%;
+        max-width: 576px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .imgProjeto {
+        position: relative;
+        margin: 0 auto;
+        width: 250px;
+        margin: 10px;
+        border-left: 10px solid rgb(100, 229, 102);
+        border-radius: 0 5px 5px 0;
+    }
+
+    .textosProjeto h2 {
+        font-size: 1.5em;
+    }
+
+    .textosProjeto p {
+        font-size: 0.8em;
+    }
+
+    .visualizarProjeto {
+        width: 150px;
+        height: 35px;
+    }
+
+    .linguagem {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .linguagem.bg.bootstrap {
+        background-size: 100px;
+    }
+
+    .linguagem.bg {
+        background-size: 60px;
+    }
+
+    .instrucao {
+        font-size: 1.2em;
+    }
+
+    .divTextoHabilidade h2 {
+        font-size: 1.5em;
+    }
+
+    .divTextoHabilidade p {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.50em;
+    }
+
+    .icone {
+        font-size: 35px;
+    }
+
 }
