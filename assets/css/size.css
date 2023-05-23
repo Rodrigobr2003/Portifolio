@@ -1,5 +1,7 @@
 @media (max-width: 576px){
 
+    
+
     .cabecalho {
         background-color: rgb(182, 174, 146);
         position: fixed;
@@ -11,6 +13,7 @@
         border-radius: 20px;
         z-index: 10;
     }
+
     .logo {
         margin-left: 15px;
         width: 40px;
@@ -33,16 +36,11 @@
     }
 
     section.module.parallax{
-        display: flex;
-        flex-direction: column;
-        height: 80vh !important;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+        display: none;
+    }
+
+    .container h2{
+        padding-top: 40px;
     }
 
     .container{
@@ -77,8 +75,9 @@
     }
 
     .linguagem{
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
     }
 
     .linguagem.bg.bootstrap{
@@ -86,7 +85,19 @@
     }
 
     .linguagem.bg{
-        background-size: 30px;
+        background-size: 40px;
+    }
+
+    .instrucao{
+        font-size: 1em;
+    }
+
+    .divTextoHabilidade h2{
+        font-size: 1.5em;
+    }
+
+    .divTextoHabilidade p{
+        font-size: 1em;
     }
 
     footer{
@@ -94,10 +105,11 @@
     }
 
     footer p{
-        font-size: 0.55em;
+        font-size: 0.50em;
     }
 
     .icone{
         font-size: 35px;
     }
+    
 }
