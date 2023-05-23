@@ -175,12 +175,8 @@ section.module.parallax-3 {
     text-align: center;
 }
 
-.textosProjeto h2{
+.textosProjeto h2 {
     font-size: 1.8em;
-}
-
-.textosProjeto p{
-    padding: 5px 40px 5px 40px;
 }
 
 .visualizarProjeto{
@@ -305,6 +301,7 @@ footer{
     padding: 5px;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 50px;
 }
 
 .icone:hover{

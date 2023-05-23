@@ -31,3 +31,15 @@ habilidades.forEach(linguagem => {
     })
     //#endregion
 });
+
+const icones = document.querySelectorAll('.icone')
+
+icones.forEach(icon => {
+    icon.addEventListener('click', function() {
+        const idIcone = icon.id
+        
+        if (id == "GitHub") {const url = 'https://github.com/Rodrigobr2003'}
+        if (id == "GitHub") { const url = 'https://www.linkedin.com/feed/'}
+        
+    })
+});
