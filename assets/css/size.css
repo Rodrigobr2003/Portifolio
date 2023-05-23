@@ -3,7 +3,7 @@
     .cabecalho {
         background-color: rgb(182, 174, 146);
         position: fixed;
-        width: 96.5%;
+        width: 95.5%;
         margin: 10px;
         display: flex;
         flex: left;
@@ -12,25 +12,37 @@
         z-index: 10;
     }
     .logo {
-        margin-left: 30px;
+        margin-left: 15px;
         width: 40px;
     }
     .links {
         list-style: none;
         display: flex;
         float: left;
-        padding: 0px;
-        margin: 0px;
+        margin: -30px;
         position: relative;
         left: -20px;
         align-items: center;
     }
     .links li a {
         text-decoration: none;
-        font-size: 1.2em;
+        font-size: 0.9em;
         font-family: 'Ubahn', sans-serif;
         color: black;
         transition: 0.5s ease;
+    }
+
+    section.module.parallax{
+        display: flex;
+        flex-direction: column;
+        height: 80vh !important;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
 
     .container{
@@ -45,7 +57,7 @@
     .imgProjeto{
         position: relative;
         margin: 0 auto;
-        width: 180px;
+        width: 130px;
         margin: 10px;
         border-left: 10px solid rgb(100, 229, 102);
         border-radius: 0 5px 5px 0;
@@ -65,20 +77,24 @@
     }
 
     .linguagem{
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
 
-    footer{
-        padding: 20px;
-    }
-
-    footer p{
-        font-size: 0.75em;
+    .linguagem.bg.bootstrap{
+        background-size: 40px;
     }
 
     .linguagem.bg{
-        background-size: 40px;
+        background-size: 30px;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+    footer p{
+        font-size: 0.55em;
     }
 
     .icone{
