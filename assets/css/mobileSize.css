@@ -1,0 +1,113 @@
+@media (max-width: 576px){
+
+    .cabecalho{
+        background-color: rgb(182, 174, 146);
+        position: fixed;
+        width: 95.5%;
+        margin: 10px;
+        display: flex;
+        flex: left;
+        padding: 10px 0;
+        border-radius: 20px;
+        z-index: 10;
+    }
+
+    .logo {
+        margin-left: 15px;
+        width: 40px;
+    }
+    .links {
+        list-style: none;
+        display: flex;
+        float: left;
+        margin: -30px;
+        position: relative;
+        left: -20px;
+        align-items: center;
+    }
+    .links li a {
+        text-decoration: none;
+        font-size: 0.9em;
+        font-family: 'Ubahn', sans-serif;
+        color: black;
+        transition: 0.5s ease;
+    }
+
+    section.module.parallax{
+        display: none;
+    }
+
+    .container h2{
+        padding-top: 40px;
+    }
+
+    .container{
+        width: 86%;
+        max-width: 576px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .imgProjeto{
+        position: relative;
+        margin: 0 auto;
+        width: 130px;
+        margin: 10px;
+        border-left: 10px solid rgb(100, 229, 102);
+        border-radius: 0 5px 5px 0;
+    }
+
+    .textosProjeto h2 {
+        font-size: 1em;
+    }
+
+    .textosProjeto p {
+        font-size: 0.75em;
+    }
+
+    .visualizarProjeto{
+        width: 150px;
+        height: 35px;
+    }
+
+    .linguagem{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    .linguagem.bg.bootstrap{
+        background-size: 40px;
+    }
+
+    .linguagem.bg{
+        background-size: 40px;
+    }
+
+    .instrucao{
+        font-size: 1em;
+    }
+
+    .divTextoHabilidade h2{
+        font-size: 1.5em;
+    }
+
+    .divTextoHabilidade p{
+        font-size: 1em;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+    footer p{
+        font-size: 0.50em;
+    }
+
+    .icone{
+        font-size: 35px;
+    }
+    
+}

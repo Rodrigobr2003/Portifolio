@@ -1,3 +1,30 @@
+window.onload = () => {
+    const tamanhoTela = window.innerWidth
+    let dispositivo = undefined
+
+    if (tamanhoTela >= 316) {dispositivo = 'mobileSize'}
+    if (tamanhoTela >= 760) {dispositivo = 'tabletSize'}
+    if (tamanhoTela >= 1360) {dispositivo = 'pcSize'}
+
+    let xhr = new XMLHttpRequest()
+
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            //cria o link no html para o css
+            let css = document.createElement('link')
+            css.rel = 'stylesheet'
+            //define o href do elemento no html
+            css.href = `./assets/css/${dispositivo}.css`
+            document.head.appendChild(css)
+        }
+    }
+    //abre o arquivo
+    xhr.open("GET", `./assets/css/${dispositivo}.css`);
+    xhr.send();
+}
+
+
+
 const habilidades = document.querySelectorAll('.linguagem')
 
 habilidades.forEach(linguagem => {
@@ -38,8 +65,8 @@ icones.forEach(icon => {
     icon.addEventListener('click', function() {
         const idIcone = icon.id
         
-        if (id == "GitHub") {const url = 'https://github.com/Rodrigobr2003'}
-        if (id == "GitHub") { const url = 'https://www.linkedin.com/feed/'}
+        if (idIcone == "GitHub") {const url = 'https://github.com/Rodrigobr2003'}
+        if (idIcone == "GitHub") { const url = 'https://www.linkedin.com/feed/'}
         
     })
 });
