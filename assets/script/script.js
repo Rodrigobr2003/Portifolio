@@ -61,22 +61,22 @@ habilidades.forEach(linguagem => {
 
 const icones = document.querySelectorAll('.icone')
 
-icones.forEach(icon => {
-    icon.addEventListener('click', function() {
-        const idIcone = icon.id
-        let url = undefined
+// icones.forEach(icon => {
+//     icon.addEventListener('click', function() {
+//         const idIcone = icon.id
+//         let url = undefined
 
-        if (idIcone == "GitHub") { url = 'https://github.com/Rodrigobr2003'}
-        if (idIcone == "LinkedIn") { url = 'https://www.linkedin.com/feed/'}
+//         if (idIcone == "GitHub") { url = 'https://github.com/Rodrigobr2003'}
+//         if (idIcone == "LinkedIn") { url = 'https://www.linkedin.com/feed/'}
         
-        let xhr = new XMLHttpRequest()
+//         let xhr = new XMLHttpRequest()
 
-        xhr.onreadystatechange = function() {
-            if(xhr.readyState === 4 && xhr.status === 200){
-                window.location.href = xhr.responseURL
-            }
-        }
-        xhr.open("GET", url)
-        xhr.send()
-    })
-});
+//         xhr.onreadystatechange = function() {
+//             if(xhr.readyState === 4 && xhr.status === 200){
+//                 window.location.href = xhr.responseURL
+//             }
+//         }
+//         xhr.open("GET", url)
+//         xhr.send()
+//     })
+// });
