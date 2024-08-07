@@ -1,3 +1,0 @@
-MySQL é um sistema de gerenciamento de banco de dados relacional amplamente utilizado para armazenar, organizar e recuperar dados. Com o MySQL, é possível criar e gerenciar bancos de dados, executar consultas complexas, manipular dados e garantir a integridade e segurança dos dados.
-
-<p class="conhecimento">Tenho 1 ano de expreiência com MySQL.</p>

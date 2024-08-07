@@ -1,0 +1,3 @@
+Angular é uma plataforma de desenvolvimento web e framework JavaScript de código aberto mantido pelo Google, que facilita a criação de aplicações web dinâmicas e responsivas. Ele utiliza a arquitetura baseada em componentes, onde cada parte da interface do usuário é dividida em componentes reutilizáveis. Angular oferece recursos como data binding bidirecional, injeção de dependências, roteamento, e integração fácil com serviços HTTP, permitindo o desenvolvimento eficiente de aplicações de página única (SPA) com uma experiência de usuário fluida e interativa.
+
+<p class="conhecimento">Tenho 1 ano de experiência com Angular.</p>

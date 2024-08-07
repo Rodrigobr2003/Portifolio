@@ -1,3 +1,3 @@
 HTML5 é a versão mais recente do HTML, permitindo recursos avançados e semântica melhorada para criar sites modernos e interativos. Ela introduz suporte nativo a mídia, elementos semânticos e APIs para interações dinâmicas no navegador, proporcionando uma experiência mais rica aos usuários.
 
-<p class="conhecimento">Tenho 2 anos de expreiência com HTML5.</p>
+<p class="conhecimento">Tenho 2 anos de experiência com HTML5.</p>

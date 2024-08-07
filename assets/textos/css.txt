@@ -1,3 +1,3 @@
 CSS3 é a versão mais recente do CSS, a linguagem de estilo utilizada para definir a aparência e o layout dos elementos HTML em uma página da web. Com o CSS3, é possível aplicar transições, animações, sombras, gradientes e outros efeitos visuais, melhorando a experiência de design.
 
-<p class="conhecimento">Tenho 2 anos de expreiência com CSS3.</p>
+<p class="conhecimento">Tenho 2 anos de experiência com CSS3.</p>
