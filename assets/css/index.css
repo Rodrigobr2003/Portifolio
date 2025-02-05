@@ -6,20 +6,18 @@
 }
 
 .cabecalho {
-  background-color: rgb(182, 174, 146);
+  background: linear-gradient(to right, #0a2d7a, #224694, #041437);
   position: fixed;
-  width: 98.5%;
-  margin: 10px;
+  width: 100%;
   display: flex;
   flex: left;
   padding: 10px 0;
-  border-radius: 20px;
   z-index: 10;
 }
 
 .logo {
   margin-left: 160px;
-  width: 60px;
+  width: 10%;
 }
 
 .links {
@@ -31,18 +29,22 @@
   position: relative;
   left: 350px;
   align-items: center;
+  margin-right: 10%;
 }
 
 .links li a {
   text-decoration: none;
   font-size: 1.8em;
   font-family: "Ubahn", sans-serif;
-  color: black;
+  color: #fff;
   transition: 0.5s ease;
+  padding: 4px;
+  border-radius: 12px;
 }
 
 .links li a:hover {
-  color: rgb(100, 229, 102);
+  color: #7ac4ff;
+  background-color: #040a26;
 }
 
 .links li {
@@ -54,6 +56,7 @@
 .links li:hover {
   border-bottom: 2px solid black;
   margin-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 /*PARALLAX*/
