@@ -73,6 +73,7 @@ h2 {
 
 h2 {
   font-size: 2.5em;
+  color: #fff;
 }
 
 .wrapper {
@@ -94,6 +95,7 @@ main {
 
 section.module p {
   margin-bottom: 40px;
+  color: #fff;
 }
 
 section.module:last-child {
@@ -102,7 +104,16 @@ section.module:last-child {
 
 section.module.content {
   padding: 40px 0;
-  background-color: #ece7d5;
+  background: linear-gradient(
+    to bottom,
+    #000,
+    #01061b,
+    #020820,
+    #040a26,
+    #020820,
+    #01061b,
+    #000
+  );
 }
 
 section.module.parallax {
@@ -154,7 +165,8 @@ section.module.parallax::after {
 }
 
 section.module.parallax-1 {
-  background-image: url("../images/card.png");
+  background-image: url("../images/parallax1.png");
+  background-size: cover;
 }
 
 section.module.parallax-2 {
