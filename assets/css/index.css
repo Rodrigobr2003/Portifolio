@@ -93,7 +93,7 @@ main {
   padding: 0 20px;
 }
 
-section.module p {
+section.txtColor p {
   margin-bottom: 40px;
   color: #fff;
 }
@@ -241,7 +241,7 @@ section.module.parallax-3 {
   margin: 10px;
   width: 90px;
   height: 90px;
-  background-color: #fff;
+  background-color: #1e3f88;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -249,56 +249,36 @@ section.module.parallax-3 {
 }
 
 .linguagem.bg {
-  background-image: url("../images/HtmlEsc.png");
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.5s ease-in-out;
 }
 
-.linguagem.bg.html {
-  background-image: url("../images/HtmlEsc.png");
+.linguagem.bg.react-native {
+  background-image: url("../images/react-nativeEsc.png");
 }
 
-.linguagem.bg.html:hover {
-  background-image: url("../images/Html.png");
+.linguagem.bg.typescript {
+  background-image: url("../images/typescriptEsc.png");
 }
 
-.linguagem.bg.css {
-  background-image: url("../images/CssEsc.png");
-}
-
-.linguagem.bg.css:hover {
-  background-image: url("../images/Css.png");
-}
-
-.linguagem.bg.javaScript {
-  background-image: url("../images/JavaScriptEsc.png");
-}
-
-.linguagem.bg.javaScript:hover {
-  background-image: url("../images/JavaScript.png");
+.linguagem.bg.mongodb {
+  background-image: url("../images/mongodbEsc.png");
 }
 
 .linguagem.bg.nodeJs {
   background-image: url("../images/NodeJsEsc.png");
 }
 
-.linguagem.bg.nodeJs:hover {
-  background-image: url("../images/NodeJs.png");
-}
-
 .linguagem.bg.angular {
-  background-image: url("../images/AngularEsc.png");
-}
-
-.linguagem.bg.angular:hover {
-  background-image: url("../images/Angular.png");
+  background-image: url("../images/angularEsc.png");
 }
 
 .divTextoHabilidade {
   opacity: 0;
   transition: opacity 0.7s;
+  color: #fff;
 }
 
 .visivel {
@@ -313,10 +293,12 @@ section.module.parallax-3 {
   font-size: 1.5em;
   text-align: center;
   margin-top: 30px;
+  color: #fff;
 }
 
 .conhecimento {
   margin-top: 20px;
+  color: #53c1de;
 }
 
 footer {

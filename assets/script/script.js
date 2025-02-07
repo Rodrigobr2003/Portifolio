@@ -1,65 +1,90 @@
 window.onload = () => {
-    const tamanhoTela = window.innerWidth
-    let dispositivo = undefined
+  const tamanhoTela = window.innerWidth;
+  let dispositivo = undefined;
 
-    if (tamanhoTela >= 316) {dispositivo = 'mobileSize'}
-    if (tamanhoTela >= 760) {dispositivo = 'tabletSize'}
-    if (tamanhoTela >= 1360) {dispositivo = 'pcSize'}
+  if (tamanhoTela >= 316) {
+    dispositivo = "mobileSize";
+  }
+  if (tamanhoTela >= 760) {
+    dispositivo = "tabletSize";
+  }
+  if (tamanhoTela >= 1360) {
+    dispositivo = "pcSize";
+  }
 
-    let xhr = new XMLHttpRequest()
+  let xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function(){
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            //cria o link no html para o css
-            let css = document.createElement('link')
-            css.rel = 'stylesheet'
-            //define o href do elemento no html
-            css.href = `./assets/css/${dispositivo}.css`
-            document.head.appendChild(css)
-        }
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      //cria o link no html para o css
+      let css = document.createElement("link");
+      css.rel = "stylesheet";
+      //define o href do elemento no html
+      css.href = `./assets/css/${dispositivo}.css`;
+      document.head.appendChild(css);
     }
-    //abre o arquivo
-    xhr.open("GET", `./assets/css/${dispositivo}.css`);
-    xhr.send();
-}
+  };
+  //abre o arquivo
+  xhr.open("GET", `./assets/css/${dispositivo}.css`);
+  xhr.send();
+};
 
+const habilidades = document.querySelectorAll(".linguagem");
 
+let lingAtual = "";
+let htmlLingAtual = undefined;
 
-const habilidades = document.querySelectorAll('.linguagem')
+habilidades.forEach((linguagem) => {
+  let divHabilidade = document.querySelector(".divTextoHabilidade");
 
-habilidades.forEach(linguagem => {
-    let divHabilidade = document.querySelector('.divTextoHabilidade') 
+  let estado = false;
 
-    //#region MOUSEOVER
-    linguagem.addEventListener('mouseover', function() {
-        let idLinguagem = linguagem.id
-        let nomeLinguagem = idLinguagem.toUpperCase()
+  //#region MOUSECLICK
+  linguagem.addEventListener("click", function (ling) {
+    if (!estado || ling.target.id != lingAtual) {
+      estado = true;
 
-        let divNomeLinguagem = document.querySelector('.nomeLinguagem')
-        divNomeLinguagem.innerHTML = nomeLinguagem
+      if (lingAtual != "" && lingAtual != linguagem.id) {
+        htmlLingAtual.style.backgroundImage = `url(./assets/images/${lingAtual}Esc.png`;
+      }
 
-        divHabilidade.classList.add('visivel')
-         
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                document.querySelector(".descricaoLinguagem").innerHTML = xhr.responseText;
-            }
-        };
-        xhr.open("GET", `./assets/textos/${idLinguagem}.txt`);
-        xhr.send();
+      lingAtual = ling.target.id;
 
-    })
-    //#endregion
+      let idLinguagem = linguagem.id;
+      let nomeLinguagem = idLinguagem.toUpperCase();
 
-    //#region MOUSEOUT
-    linguagem.addEventListener('mouseout', function () {
-        divHabilidade.classList.remove('visivel')
-    })
-    //#endregion
+      linguagem.style.backgroundImage = `url(./assets/images/${ling.target.id}.png`;
+
+      let divNomeLinguagem = document.querySelector(".nomeLinguagem");
+      divNomeLinguagem.innerHTML = nomeLinguagem;
+
+      divHabilidade.classList.add("visivel");
+
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.querySelector(".descricaoLinguagem").innerHTML =
+            xhr.responseText;
+        }
+      };
+      xhr.open("GET", `./assets/textos/${idLinguagem}Eng.txt`);
+      xhr.send();
+    } else {
+      estado = false;
+
+      htmlLingAtual.style.backgroundImage = `url(./assets/images/${ling.target.id}Esc.png`;
+
+      divHabilidade.classList.remove("visivel");
+    }
+
+    lingAtual = ling.target.id;
+    htmlLingAtual = linguagem;
+  });
+
+  //#endregion
 });
 
-const icones = document.querySelectorAll('.icone')
+const icones = document.querySelectorAll(".icone");
 
 // icones.forEach(icon => {
 //     icon.addEventListener('click', function() {
@@ -68,7 +93,7 @@ const icones = document.querySelectorAll('.icone')
 
 //         if (idIcone == "GitHub") { url = 'https://github.com/Rodrigobr2003'}
 //         if (idIcone == "LinkedIn") { url = 'https://www.linkedin.com/feed/'}
-        
+
 //         let xhr = new XMLHttpRequest()
 
 //         xhr.onreadystatechange = function() {
