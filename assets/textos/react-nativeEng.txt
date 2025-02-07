@@ -1,0 +1,3 @@
+React Native is a mobile development framework that allows you to create native apps for iOS and Android using JavaScript and React. With React Native, developers can write reusable code for multiple platforms, reducing development time and costs. Additionally, the framework offers near-native performance, support for reusable components, and integration with native APIs, making it a popular choice for building modern and efficient mobile apps.
+
+<p class="conhecimento">I have 1 year of experience with React Native.</p>
