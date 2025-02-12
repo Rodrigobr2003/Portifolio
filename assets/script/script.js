@@ -1,6 +1,12 @@
+const idioma = document.querySelector(".lingua");
+
 window.onload = () => {
   const tamanhoTela = window.innerWidth;
   let dispositivo = undefined;
+
+  let prlx1 = document.querySelector(".parallax-1");
+  let prlx2 = document.querySelector(".parallax-2");
+  let prlx3 = document.querySelector(".parallax-3");
 
   if (tamanhoTela >= 316) {
     dispositivo = "mobileSize";
@@ -27,6 +33,20 @@ window.onload = () => {
   //abre o arquivo
   xhr.open("GET", `./assets/css/${dispositivo}.css`);
   xhr.send();
+
+  console.log("Idioma ID:", idioma.id);
+
+  if (idioma.id == "pt") {
+    prlx1.style.backgroundImage = "url(./assets/images/parallax1PT.png)";
+    prlx2.style.backgroundImage = "url(./assets/images/parallax2PT.png)";
+    prlx3.style.backgroundImage = "url(./assets/images/parallax3PT.png)";
+  }
+
+  if (idioma.id == "eng") {
+    prlx1.style.backgroundImage = "url(./assets/images/parallax1.png)";
+    prlx2.style.backgroundImage = "url(./assets/images/parallax2.png)";
+    prlx3.style.backgroundImage = "url(./assets/images/parallax3.png)";
+  }
 };
 
 const habilidades = document.querySelectorAll(".linguagem");
@@ -67,7 +87,15 @@ habilidades.forEach((linguagem) => {
             xhr.responseText;
         }
       };
-      xhr.open("GET", `./assets/textos/${idLinguagem}Eng.txt`);
+
+      if (idioma.id == "pt") {
+        xhr.open("GET", `./assets/textos/${idLinguagem}.txt`);
+      }
+
+      if (idioma.id == "eng") {
+        xhr.open("GET", `./assets/textos/${idLinguagem}Eng.txt`);
+      }
+
       xhr.send();
     } else {
       estado = false;
