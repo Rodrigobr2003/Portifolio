@@ -1,0 +1,3 @@
+MongoDB é um banco de dados NoSQL orientado a documentos, projetado para armazenar grandes volumes de dados de forma flexível e escalável. Em vez de usar tabelas e linhas como bancos de dados relacionais, o MongoDB armazena informações em documentos no formato JSON, permitindo estruturas dinâmicas e consultas eficientes. Com recursos como alta disponibilidade, replicação e sharding, ele é amplamente utilizado em aplicações modernas, garantindo desempenho e facilidade na manipulação de dados.
+
+<p class="conhecimento">Tenho 2 anos de experiência com MongoDB.</p>

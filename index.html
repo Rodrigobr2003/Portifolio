@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
-    <link rel="icon" type="text/css" href="assets/images/logo.png" />
+    <link rel="icon" type="text/css" href="assets/images/icon.png" />
     <link href="https://fonts.cdnfonts.com/css/giblant" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/ubahn" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,66 +26,56 @@
         <header class="cabecalho">
           <img class="logo" src="assets/images/logo.png" />
           <ul class="links">
-            <li><a href="#sobreMim">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li>
+              <a id="pt" class="lingua" href="indexEng.html"
+                ><img src="https://flagsapi.com/GB/shiny/24.png"
+              /></a>
+            </li>
+            <li><a href="#aboutMe">Sobre mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Me contate</a></li>
           </ul>
         </header>
-        <section class="module parallax parallax-1" id="sobreMim"></section>
+        <section class="module parallax parallax-1" id="aboutMe"></section>
 
-        <section class="module content">
+        <section class="module content txtColor">
           <div class="container">
-            <h2 class="first-h2">Um pouco sobre mim</h2>
+            <h2 class="first-h2">Sobre mim</h2>
             <p>
-              Sou Rodrigo Bragagnolo, estudante da FATEC ITU e apaixonado pela
-              área da tecnologia. Em 2019, tive meu primeiro contato com a
-              programação, mas foi em 2020, graças a um amigo, que me envolvi
-              completamente com o desenvolvimento web. Desde então, tenho
-              dedicado meu tempo ao estudo e aprimoramento nesse campo
-              fascinante.
+              Sou Rodrigo Bragagnolo, um desenvolvedor full-stack apaixonado por
+              tecnologia e resolução de problemas. Minha jornada começou no
+              desenvolvimento front-end, onde aprimorei minhas habilidades na
+              criação de interfaces intuitivas e responsivas usando frameworks
+              modernos para web e mobile. Com o tempo, expandi meus
+              conhecimentos para o desenvolvimento back-end, aprendendo
+              tecnologias essenciais para construir aplicações robustas e
+              escaláveis. Ao longo da minha experiência, trabalhei em projetos
+              pessoais e acadêmicos, explorando constantemente novas ferramentas
+              e boas práticas para aprimorar minhas habilidades. Estou sempre em
+              busca de aprendizado, melhoria contínua e criação de soluções
+              digitais inovadoras que gerem impacto.
             </p>
 
             <p>
-              Sou encantado pela tecnologia por sua vastidão de possibilidades.
-              Procuro sempre aprender mais, buscar soluções criativas e me
-              dedicar a projetos empolgantes. Sinto que estou construindo uma
-              base sólida para uma carreira promissora no desenvolvimento web.
+              Ao longo da minha experiência, trabalhei em projetos pessoais e
+              acadêmicos, explorando constantemente novas ferramentas e boas
+              práticas para aprimorar minhas habilidades. Estou sempre em busca
+              de aprendizado, melhoria contínua e criação de soluções digitais
+              inovadoras que gerem impacto.
             </p>
 
             <p></p>
           </div>
         </section>
 
-        <section class="module parallax parallax-2" id="projetos"></section>
+        <section class="module parallax parallax-2" id="projects"></section>
 
-        <section class="module content">
+        <section class="module content txtColor">
           <div class="container">
             <h2>Meus Projetos</h2>
 
             <div class="projetos">
-              <div class="projeto">
-                <img
-                  class="imgProjeto"
-                  src="assets/images/alimenteSeuMonstro.png"
-                />
-
-                <div class="textosProjeto">
-                  <h2>Alimente Seu Monstro</h2>
-                  <p>
-                    Este projeto foi inspirado no jogo mobile chamado "Pou". O
-                    objetivo deste projeto é garantir que o monstro esteja
-                    sempre feliz e saudável. O projeto que desenvolvi permite
-                    que os jogadores experimentem a diversão e os desafios de
-                    cuidar de um monstro virtual.
-                  </p>
-                  <p>
-                    <a href="https://alimenteseumonstro.netlify.app/"
-                      ><button class="visualizarProjeto">Visualizar</button></a
-                    >
-                  </p>
-                </div>
-              </div>
-
               <div class="projeto">
                 <img class="imgProjeto" src="assets/images/orbee_proj.png" />
 
@@ -106,6 +96,29 @@
               </div>
 
               <div class="projeto">
+                <img class="imgProjeto" src="assets/images/orbee_proj_rn.png" />
+
+                <div class="textosProjeto">
+                  <h2>Rede Social Orbee| React Native</h2>
+                  <p>
+                    Orbee é uma plataforma de rede social inspirada no Facebook,
+                    onde os usuários podem se cadastrar, criar perfis,
+                    conectar-se com amigos, compartilhar postagens e imagens,
+                    além de interagir por meio de comentários e curtidas. Este
+                    projeto foi desenvolvido para dispositivos móveis utilizando
+                    React Native e é uma réplica do projeto Orbee para a web,
+                    adaptada para uso mobile.
+                  </p>
+                  <p>
+                    <a
+                      href="https://github.com/Rodrigobr2003/rede-social-react-native"
+                      ><button class="visualizarProjeto">Visualizar</button></a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="projeto">
                 <img
                   class="imgProjeto"
                   src="assets/images/Projeto_Netflix.png"
@@ -116,9 +129,9 @@
                   <p>
                     Neste projeto pessoal, desenvolvi uma réplica da interface
                     do site da Netflix, focando exclusivamente no front-end.
-                    Utilizei HTML5, CSS3 e TS para recriar a estrutura e o
-                    design visual da plataforma de streaming, além de efeitos
-                    visuais inspirados no layout original da Netflix.
+                    Utilize Angular e TypeScript para recriar a estrutura e o
+                    design visual da plataforma de streaming, incorporando
+                    efeitos visuais inspirados no layout da Netflix 2024.
                   </p>
                   <p>
                     <a href="https://projetositefinans.netlify.app/"
@@ -131,14 +144,14 @@
               </div>
 
               <div class="projeto">
-                <img class="imgProjeto" src="assets/images/Finans.png" />
+                <img class="imgProjeto" src="assets/images/Finans_eng.png" />
 
                 <div class="textosProjeto">
                   <h2>Finans</h2>
                   <p>
-                    Apresento o projeto de simulação de companhia de finanças
-                    desenvolvido com dedicação e expertise. Com design elegante
-                    e funcionalidades abrangentes, nossa plataforma proporciona
+                    Apresento o projeto de simulação de empresa financeira,
+                    desenvolvido com dedicação e expertise. Com um design
+                    elegante e recursos abrangentes, nossa plataforma oferece
                     aos usuários a oportunidade de explorar diversos aspectos
                     financeiros.
                   </p>
@@ -153,16 +166,16 @@
               <div class="projeto">
                 <img
                   class="imgProjeto"
-                  src="assets/images/SeguradoraTopCar.png"
+                  src="assets/images/SeguradoraTopCar_eng.png"
                 />
 
                 <div class="textosProjeto">
                   <h2>Seguradora TopCar - CRUD</h2>
                   <p>
-                    Este projeto é uma simulação de uma seguradora para carros,
-                    desenvolvido para fins educacionais e de demonstração. O
-                    usuário poderá criar um perfil, ler seus dados, editar as
-                    informações apagar sua conta (CRUD)
+                    Este projeto é uma simulação de uma empresa de seguros de
+                    automóveis, desenvolvido para fins educacionais e de
+                    demonstração. O usuário poderá criar um perfil, visualizar
+                    seus dados, editar informações e excluir sua conta (CRUD).
                   </p>
 
                   <p>
@@ -175,17 +188,20 @@
               </div>
 
               <div class="projeto">
-                <img class="imgProjeto" src="assets/images/Clima_tempo.png" />
+                <img
+                  class="imgProjeto"
+                  src="assets/images/Clima_tempo_eng.png"
+                />
 
                 <div class="textosProjeto">
                   <h2>Clima & Tempo - API</h2>
 
                   <p>
-                    Este projeto é um site que informa ao usuário informações
-                    sobre o clima do lugar que o indivíduo quiser basta apenas
-                    pesquisar o local e pronto! Este software utiliza 3 APIs que
-                    auxiliam o site a fornecer informações precisas, são elas:
-                    OpenWeather API, TimeZone DB e FlagsAPI
+                    Este projeto é um site que fornece aos usuários informações
+                    sobre o clima de qualquer localidade que escolherem. Basta
+                    pesquisar o lugar desejado, e pronto! Este software utiliza
+                    três APIs para fornecer informações precisas: OpenWeather
+                    API, TimeZone DB e FlagsAPI.
                   </p>
 
                   <p>
@@ -197,7 +213,10 @@
               </div>
 
               <div class="projeto">
-                <img class="imgProjeto" src="assets/images/ger_biblio.png" />
+                <img
+                  class="imgProjeto"
+                  src="assets/images/ger_biblio_eng.png"
+                />
 
                 <div class="textosProjeto">
                   <h2>Gerenciador de Biblioteca - Java</h2>
@@ -205,11 +224,11 @@
                   <p>
                     Este projeto de Sistema de Gerenciamento de Biblioteca em
                     Java permite a administração de livros, usuários e
-                    empréstimos. O objetivo principal é praticar conceitos
+                    empréstimos. O principal objetivo é praticar conceitos
                     básicos e intermediários de Java, como POO, manipulação de
-                    arquivos, estrutura de dados, etc. O sistema registra,
-                    atualiza e organiza os dados de forma simples, sem o uso de
-                    frameworks.
+                    arquivos, estruturas de dados, entre outros. O sistema
+                    registra, atualiza e organiza os dados de forma simples, sem
+                    o uso de frameworks.
                   </p>
 
                   <a
@@ -219,12 +238,12 @@
                 </div>
               </div>
               <div class="projeto">
-                <img class="imgProjeto" src="assets/images/EmBreve.png" />
+                <img class="imgProjeto" src="assets/images/EmBreve_eng.png" />
 
                 <div class="textosProjeto">
                   <h2>Em breve</h2>
 
-                  <p>Um novo projeto em breve...</p>
+                  <p>Em breve um novo projeto...</p>
 
                   <a
                     href="https://www.linkedin.com/feed/update/urn:li:activity:7239007772594319360/"
@@ -238,30 +257,48 @@
           </div>
         </section>
 
-        <section class="module parallax parallax-3" id="habilidades"></section>
+        <section class="module parallax parallax-3" id="skills"></section>
 
         <section class="module content">
           <div class="container">
-            <h2>Habilidades e Competências</h2>
+            <h2>Habilidades & Competências</h2>
 
             <div class="habilidades">
-              <div id="html" class="linguagem bg html"></div>
+              <div id="react-native" class="linguagem bg react-native"></div>
 
-              <div id="css" class="linguagem bg css"></div>
+              <div id="typescript" class="linguagem bg typescript"></div>
 
-              <div id="javaScript" class="linguagem bg javaScript"></div>
+              <div id="mongodb" class="linguagem bg mongodb"></div>
 
               <div id="nodeJs" class="linguagem bg nodeJs"></div>
 
               <div id="angular" class="linguagem bg angular"></div>
             </div>
             <p class="instrucao">
-              Passe o mouse por cima dos ícones para exibir a descrição
+              Clique nos ícones para saber mais sobre cada habilidade.
             </p>
             <div class="divTextoHabilidade">
               <h2 class="nomeLinguagem"></h2>
 
               <p class="descricaoLinguagem"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="module content" id="contact">
+          <div class="container">
+            <h2>Me Contate</h2>
+
+            <div class="email-inputs">
+              <label for="">Assunto</label>
+              <input type="text" class="inputEmail inputSubj" />
+
+              <label for="">Mensagem</label>
+              <input type="text" class="inputEmail inputBody" />
+
+              <button class="submit-btn">
+                <a id="emailLink" href="#">Enviar Email</a>
+              </button>
             </div>
           </div>
         </section>

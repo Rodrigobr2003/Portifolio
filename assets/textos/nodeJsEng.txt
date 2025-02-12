@@ -1,0 +1,3 @@
+Node.js is a JavaScript runtime environment on the server side that allows the creation of scalable and high-performance applications. It uses an asynchronous, event-driven model, ideal for applications that require non-blocking I/O operations, such as APIs and web servers. With Node.js, it's possible to create servers, handle files, interact with databases, and perform many other common back-end development tasks, all using JavaScript.
+
+<p class="conhecimento">I have 2 years of experience with NodeJS.<p>

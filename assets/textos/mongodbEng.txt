@@ -1,0 +1,3 @@
+MongoDB is a document-oriented NoSQL database designed to store large volumes of data in a flexible and scalable way. Instead of using tables and rows like relational databases, MongoDB stores information in JSON-format documents, allowing for dynamic structures and efficient queries. With features such as high availability, replication, and sharding, it is widely used in modern applications, ensuring performance and ease of data handling.
+
+<p class="conhecimento">I have 2 year of experience with MongoDB.</p>
