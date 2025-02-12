@@ -84,6 +84,27 @@ habilidades.forEach((linguagem) => {
   //#endregion
 });
 
+//#region MAIL TO
+const inputsEmail = document.querySelectorAll(".inputEmail");
+
+let subject = "";
+let body = "";
+let email = "rodrigobr2003@hotmail.com";
+
+inputsEmail.forEach((input) => {
+  input.addEventListener("input", () => {
+    if (input.classList.contains("inputSubj")) subject = input.value;
+    if (input.classList.contains("inputBody")) body = input.value;
+
+    let mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    document.getElementById("emailLink").setAttribute("href", mailtoLink);
+  });
+});
+//#endregion
+
 const icones = document.querySelectorAll(".icone");
 
 // icones.forEach(icon => {
