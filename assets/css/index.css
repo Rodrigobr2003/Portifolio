@@ -59,6 +59,30 @@
   padding-bottom: 8px;
 }
 
+.download-btn {
+  width: 35%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  border: 3px solid rgb(41, 73, 253);
+  background: #000;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.download-btn:hover {
+  border: 3px solid aqua;
+  color: rgb(0, 209, 209);
+}
+
+.download-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*PARALLAX*/
 body {
   word-wrap: break-word;
