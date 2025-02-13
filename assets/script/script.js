@@ -49,6 +49,54 @@ window.onload = () => {
   }
 };
 
+//#region PROJETOS
+const projetos = document.querySelectorAll(".projeto");
+
+let prjAtual = null;
+let htmlProjAtual = null;
+
+const divTextosProjeto = document.querySelector(".textosProjeto");
+
+projetos.forEach((projeto) => {
+  projeto.addEventListener("click", function (event) {
+    const projetoClicado = event.currentTarget;
+    const conteudoProjeto = projetoClicado.children[1];
+
+    if (prjAtual === projetoClicado) {
+      fecharProjeto(projetoClicado);
+      prjAtual = null;
+      htmlProjAtual = null;
+      return;
+    }
+
+    if (htmlProjAtual) {
+      fecharProjeto(htmlProjAtual);
+    }
+
+    prjAtual = projetoClicado;
+    htmlProjAtual = projetoClicado;
+
+    conteudoProjeto.style.opacity = "1";
+    conteudoProjeto.style.maxHeight = "500px";
+  });
+});
+
+// Função para fechar um projeto
+function fecharProjeto(projeto) {
+  const conteudoProjeto = projeto.children[1];
+
+  conteudoProjeto.style.opacity = "0";
+  conteudoProjeto.style.maxHeight = "0px";
+
+  setTimeout(() => {
+    if (projeto === prjAtual) return; // Evita ocultar a seção se já tiver sido aberta novamente
+    divTextosProjeto.classList.remove("visivel");
+  }, 300); // Ajuste o tempo conforme necessário para coincidir com a transição CSS
+}
+
+//#endregion
+
+//#region HABILIDADES
 const habilidades = document.querySelectorAll(".linguagem");
 
 let lingAtual = "";
@@ -74,9 +122,6 @@ habilidades.forEach((linguagem) => {
       let nomeLinguagem = idLinguagem.toUpperCase();
 
       linguagem.style.backgroundImage = `url(./assets/images/${ling.target.id}.png`;
-
-      let divNomeLinguagem = document.querySelector(".nomeLinguagem");
-      divNomeLinguagem.innerHTML = nomeLinguagem;
 
       divHabilidade.classList.add("visivel");
 
@@ -111,6 +156,7 @@ habilidades.forEach((linguagem) => {
 
   //#endregion
 });
+//#endregion
 
 //#region MAIL TO
 const inputsEmail = document.querySelectorAll(".inputEmail");
@@ -132,25 +178,3 @@ inputsEmail.forEach((input) => {
   });
 });
 //#endregion
-
-const icones = document.querySelectorAll(".icone");
-
-// icones.forEach(icon => {
-//     icon.addEventListener('click', function() {
-//         const idIcone = icon.id
-//         let url = undefined
-
-//         if (idIcone == "GitHub") { url = 'https://github.com/Rodrigobr2003'}
-//         if (idIcone == "LinkedIn") { url = 'https://www.linkedin.com/feed/'}
-
-//         let xhr = new XMLHttpRequest()
-
-//         xhr.onreadystatechange = function() {
-//             if(xhr.readyState === 4 && xhr.status === 200){
-//                 window.location.href = xhr.responseURL
-//             }
-//         }
-//         xhr.open("GET", url)
-//         xhr.send()
-//     })
-// });
