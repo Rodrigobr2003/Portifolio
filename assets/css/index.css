@@ -231,7 +231,19 @@ section.module.parallax-3 {
 
 .textosProjeto {
   text-align: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  background: linear-gradient(to bottom, #224694, #143375, #0b2661);
+  border-radius: 6px;
+  padding: 10px;
 }
+
+/* .projeto:hover .textosProjeto {
+  opacity: 1;
+  max-height: 500px;
+} */
 
 .textosProjeto h2 {
   font-size: 1.8em;
